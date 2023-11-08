@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sitemap</title>
+    <link rel="stylesheet" href="CSS/sitemap.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="Images/Logo_name.png" alt="UNREAL" height="90px" width="150px" style="margin-left: 8%; margin-top: 1%;">
+        <nav>
+            <ul class="container">
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="imagegallery.html">Gallery</a></li>
+                <li><a href="quiz/index.html">Quiz</a></li>
+                <li><a href="Buy Product.html">Product</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="About_us/AboutUs.html">About Us</a></li>
+                <li><a href="Buy Product.html" onclick="product_cart()">cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+    </div>
+
+
+
+    <div>
+        <img src="Images/student4images/sitemapgif.gif" class="gif">
+    </div>
+    
+    <div>
+        <div id="sitemap">
+            <svg width="890" height="800" class="site">
+                
+                <g id="main">
+                <text x="480" y="180" font-size="120">Sitemap</text>
+                </g>
+                
+                
+                <a href = "Main.html">
+                <rect x="360" y="380" rx="20" width="220" height="80" class="homeicon"></rect>
+                <text class="hover-effect" x="405" y="438" font-size="55">Home</text>
+                </a>
+                
+                <a href ="Main.html" >
+                <rect x="700" y="400" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="725" y="432" font-size="25">Content Page</text>
+                </a>
+
+                <a href ="Buy Product.html" >
+                <rect x="380" y="500" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="405" y="532" font-size="25">Buy Products</text>
+                </a>
+
+                <a href ="comments.html" >
+                <rect x="700" y="500" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="730" y="532" font-size="25">Query Form</text>
+                </a>
+
+                <a href ="quiz/index.html" >
+                <rect x="380" y="600" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="445" y="632" font-size="25">Quiz</text>
+                </a>
+                
+                <a href ="About_us/AboutUs.html" >
+                <rect x="700" y="600" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="715" y="632" font-size="25">Student Details</text>
+                </a>
+
+                <a href ="#" >
+                <rect x="380" y="700" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="428" y="732" font-size="25">Sitemap</text>
+                </a>
+
+                <a href ="imagegallery.html" >
+                <rect x="700" y="700" rx="10" width="180" height="50"></rect>
+                <text class="hover-effect" x="750" y="732" font-size="25">Gallery</text>
+                </a>
+
+            </svg>    
+        </div>
+    </div>
+
+
+    <p style="text-align: center; font-size: 30px;font-weight: bold;transform: translateY(-500%);top: 0;">
+        <a href="Editor pages/editors_4.html" class="editor" style="text-decoration: none;padding: 5px; color: white;border: inset 5px red;border-radius: 10px;transition: 0.5s ease;">EDITOR</a></p>
+      
+
+    <footer>
+        <div class="section1">
+            <h2>About Us</h2>
+            <hr>
+            <p>Welcome to UNREAL, your gateway to the realms of science, horror, mystery, myths, and history. Our educational page offers a unique and engaging approach to learning, providing a diverse range of content that is both informative and entertaining. From the latest scientific breakthroughs to spine-tingling tales of horror and mystery, ancient myths and legends to the pivotal events and figures of history, UNREAL has it all. Join us as we journey through the unknown and explore the fascinating and mysterious world around us.</p>
+        </div>
+        <div class="section2">
+            <h2>Address</h2>
+            <hr>
+            <div class="content">
+                <div class="place">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">  Colombo,Srilanka</span>
+                </div>
+                <div class="tel">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> +94 778819814</span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text"> unreal@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <h2>Contact Us</h2>
+            <hr>
+            <form action="#">
+                <div class="email">
+                    <div class="text">Email*</div>
+                    <input type="email" required>
+                </div>
+                <div class="msg">
+                    <div class="text">Message</div>
+                    <textarea cols="25" rows="2"></textarea>
+                </div>
+                <div class="btn">
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+
+</html>
